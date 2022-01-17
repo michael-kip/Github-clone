@@ -15,6 +15,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
 import { FormSearchComponent } from './form-search/form-search.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormSearchComponent } from './form-search/form-search.component';
     NavBarComponent,
     RepoComponent,
     UserComponent,
-    FormSearchComponent
+    FormSearchComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
