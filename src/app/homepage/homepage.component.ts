@@ -11,7 +11,7 @@ export class HomepageComponent implements OnInit {
   userResults!:User
   repositoryResults:any;
 
-  constructor() { }
+  constructor(private myService:SearchService) { }
 
   ngOnInit(): void {
   }
