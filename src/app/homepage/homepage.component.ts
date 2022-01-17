@@ -14,6 +14,22 @@ export class HomepageComponent implements OnInit {
   constructor(private myService:SearchService) { }
 
   ngOnInit(): void {
-  }
+    this.myService.user().subscribe((gityResults:any)=>{
+      this.userResults=gityResults
+  },error=>{
+    console.log("Shoking Error",error);
+  })
+
+  this.myService.fetchRepos().subscribe((RepositoryResults:any)=>{
+    this.repositoryResults=RepositoryResults
+       console.log("Repositories",RepositoryResults);
+          
+  },error=>{
+
+    console.log("ResultsError",error);
+    
+  })
+}
+
 
 }

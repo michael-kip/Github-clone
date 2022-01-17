@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SearchRepositoryComponent } from './search-repository/search-repository.component';
 import { SearchUserComponent } from './search-user/search-user.component';
 import { StarRepoDirective } from './Directives/star-repo.directive';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { StarRepoDirective } from './Directives/star-repo.directive';
     FooterComponent,
     SearchRepositoryComponent,
     SearchUserComponent,
-    StarRepoDirective
+    StarRepoDirective,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
