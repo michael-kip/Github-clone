@@ -8,6 +8,9 @@ import { User } from '../user'
 })
 export class HomepageComponent implements OnInit {
 
+  userResults!:User
+  repositoryResults:any;
+
   constructor() { }
 
   ngOnInit(): void {
