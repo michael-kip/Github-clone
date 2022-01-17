@@ -9,5 +9,13 @@ import { User } from './user';
 })
 export class SearchService {
 
+  users!: User;
+  githubusername:string="michael-kip";
+  repoName!: string;
+  srepoos: any;
+
+  username!: string;
+
+
   constructor() { }
 }
