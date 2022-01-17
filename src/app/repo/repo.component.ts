@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import {Repository} from '../repository';
+import {SearchService} from '../search.service';
 
 @Component({
   selector: 'app-repo',
@@ -6,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repo.component.css']
 })
 export class RepoComponent implements OnInit {
+
+  fetchrrr!:any;
+  fetched!: string;
+  r = false;
 
   constructor() { }
 
