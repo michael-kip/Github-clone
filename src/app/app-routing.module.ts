@@ -6,7 +6,11 @@ import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
-  {}
+  {path:'home',component:HomepageComponent},
+  {path:'user',component:UserComponent},
+  {path:'repo',component:RepoComponent}, 
+  {path:'',redirectTo:'home',pathMatch:'full'},
+  {path:'**',component:NotfoundComponent},
 ];
 
 @NgModule({
