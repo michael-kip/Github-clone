@@ -10,5 +10,11 @@
     <button type="submit" class="btn btn-warning">Search Repositories</button
     ><br /><br />
   </form>
-  <div></div>
+  <div>
+    <div class="row" *ngIf="r">
+      <div *ngFor="let repoos of fetchrrr">
+        <h5>Description: {{ repoos.description }}</h5>
+      </div>
+    </div>
+  </div>
 </div>
