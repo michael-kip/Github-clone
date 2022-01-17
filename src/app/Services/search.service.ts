@@ -58,4 +58,18 @@ findSearchRep(rname: any) {
       );
   });
   return mise;
+  findSearchRep(rname: any) {
+    let mise = new Promise<void>((resolve,) => {
+      this.http.get('https://api.github.com/users/' +
+      rname +'/repos?client_id='
+       +environment.gitApi
+        )
+        .toPromise().then((response:any) => {
+            this.srepoos= response;
+            resolve();
+          }
+        );
+    });
+    return mise;
+  }
 }
