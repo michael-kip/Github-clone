@@ -17,7 +17,6 @@ export class UserComponent implements OnInit {
     
   constructor(private myService:SearchService) { }
 
-  constructor() { }
 
   findUser () {
     this.myService.UpdateUser(this.username);
