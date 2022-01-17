@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { GhSearch } from '../gh-search';
 
 @Component({
@@ -12,5 +12,15 @@ export class FormSearchComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  searchInfo = new GhSearch('');
+  @Output() getName = new EventEmitter<GhSearch>();
+
+  searchFor(data:any){
+      this.getName.emit(data.value.find);
+      // console.log(data.value.find)
+      data.reset();
+  }
+
 
 }
