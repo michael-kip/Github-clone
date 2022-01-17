@@ -1,5 +1,26 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="image">
+        <img src="{{ userResults.avatar_url }}" alt="" />
+      </div>
+
+      <div class="username">
+        <h3>Username:{{ userResults.login }}</h3>
+      </div>
+
+      <div class="followers">
+        <h3>Followers: {{ userResults.followers }}</h3>
+      </div>
+      <div class="following">
+        <h3>Following: {{ userResults.following }}</h3>
+      </div>
+      <div class="public_repos">
+        <h3>Public Repos: {{ userResults.public_repos }}</h3>
+      </div>
+      <div class="created_at">
+        <h3>Created on: {{ userResults.created_at | date }}</h3>
+      </div>
+    </div>
   </div>
 </div>
