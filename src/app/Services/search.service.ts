@@ -44,3 +44,18 @@ getUser() {
   return this.http.get("https://api.github.com/users/" + this.username + "?client_id="  + "&client_secret=" );
 
 }
+
+findSearchRep(rname: any) {
+  let mise = new Promise<void>((resolve,) => {
+    this.http.get('https://api.github.com/users/' +
+    rname +'/repos?client_id='
+     +environment.gitApi
+      )
+      .toPromise().then((response:any) => {
+          this.srepoos= response;
+          resolve();
+        }
+      );
+  });
+  return mise;
+}
