@@ -13,6 +13,7 @@ import { SearchUserComponent } from './search-user/search-user.component';
 import { StarRepoDirective } from './Directives/star-repo.directive';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RepoComponent } from './repo/repo.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RepoComponent } from './repo/repo.component';
     SearchUserComponent,
     StarRepoDirective,
     NavBarComponent,
-    RepoComponent
+    RepoComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
