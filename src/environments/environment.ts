@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  gitApi: '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'
+  gitApi: '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'
 };
 
 /*

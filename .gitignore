@@ -47,4 +47,6 @@ Thumbs.db
 
 #environment
 
-.environment
+environment*
+environment.ts*
+environment-production*
