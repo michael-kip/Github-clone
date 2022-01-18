@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  text-align: center;
+}
+.footer {
+  background-color: bisque;
+  color: white;
+}
+
+.row {
+  align-content: center;
+}
