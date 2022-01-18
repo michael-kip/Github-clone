@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { GhSearch } from '../gh-search';
+import { GhSearch } from '../Classes/gh-search';
 
 @Component({
   selector: 'app-form-search',

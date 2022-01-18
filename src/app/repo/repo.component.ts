@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Repository } from '../repository';
-import { SearchService } from '../search.service';
+import { SearchService } from '../Services/search.service';
 
 @Component({
   selector: 'app-repo',

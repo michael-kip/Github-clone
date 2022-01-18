@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchService } from '../search.service';
-import { User } from '../user'
+import { SearchService } from '../Services/search.service';
+import { User } from '../Classes/user'; 
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -24,7 +24,7 @@ export class HomepageComponent implements OnInit {
     this.repositoryResults=RepositoryResults
        console.log("Repositories",RepositoryResults);
           
-  },error=>{
+  },(error: any)=>{
 
     console.log("ResultsError",error);
     
