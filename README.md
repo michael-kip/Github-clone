@@ -1,4 +1,4 @@
-# Quoted
+# GitHub Clone
 
 ## Author
 
@@ -15,7 +15,7 @@ https://michael-kip.github.io/core_two/
 ## Installation / Setup instruction
 
 - open terminal {Ctrl+Alt+T}
-- git clone `https://michael-kip/ip four
+- git clone `https://michael-kip/core_two
 - cd quoted
 - code . depending on the text editor of choice.
 
