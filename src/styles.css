@@ -10,3 +10,6 @@
 .row {
   align-content: center;
 }
+.col-md {
+  background-color: ghostwhite;
+}

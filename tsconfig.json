@@ -31,3 +31,5 @@
     "strictTemplates": true
   }
 }
+
+// ng build --prod --base-href "https://GithubUserName.github.io/git/" 
